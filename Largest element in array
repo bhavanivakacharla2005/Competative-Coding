@@ -1,1 +1,10 @@
-
+class Solution:
+    def largest(self, arr):
+    
+        largest=arr[0]
+        for big in arr:
+            if big > largest:
+                largest=big
+            
+        return largest
+     
