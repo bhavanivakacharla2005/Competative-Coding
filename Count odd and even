@@ -1,1 +1,11 @@
-
+class Solution:
+	def countOddEven(self, arr):
+		#Code here
+	    Even=0
+	    Odd = 0
+	    for i in arr:
+		    if i%2==0:
+		        Even = Even +1
+		    else:
+		        Odd=Odd +1
+        return (Odd,Even)
