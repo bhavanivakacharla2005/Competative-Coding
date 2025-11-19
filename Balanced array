@@ -1,1 +1,16 @@
-
+class Solution:
+    # Function to find the minimum value required to balance the array.
+    def min_value_to_balance(self, arr):
+        # code here
+        f=0
+        s=0
+        mid=len(arr)//2
+        for i in range(len(arr)):
+            if (i<mid):
+                f+=arr[i]
+            else:
+                s+=arr[i]
+        if(f>s):
+            return f-s
+        else:
+            return s-f
