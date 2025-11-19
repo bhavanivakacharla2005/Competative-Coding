@@ -1,1 +1,26 @@
+class Solution {
+    int lowerBound(int[] arr, int target) {
+        // code here
+        int size=arr.length;
+        int low=0;
+        int high=size-1;
+        int mid=(low+high)/2;//if every element is smaller than target this would be the answer
+        
+          while(low<=high)
+        {
+            if(arr[low]>=target) 
+                return low;
+            else if(arr[mid]>=target)
+                high=mid;
+            
+            else
+                low=mid+1;
+                mid=(low+high)/2;
+            
+        }
+        
+        return size;
+        
+    }
+}
 
