@@ -1,1 +1,13 @@
-
+class Solution:
+    def checkPangram(self,s):
+        #code here
+        S = set()
+        s = s.lower()
+        for i in s:
+            if i.isalpha():
+                S.add(i)
+        if len(S) == 26:
+            return True
+        else:
+            return False
+        
